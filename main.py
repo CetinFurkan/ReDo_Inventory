@@ -37,7 +37,7 @@ def copy_files():
         source_files = [os.path.join(source_directory, filename + ext) for ext in ['.stl', '.json', '.png']]
         # Ensure the destination folder exists, create it if necessary
         destination_folder = os.path.dirname(fullpath)  
-        folders = destination_folder.split(os.sep)
+        folders = destination_folder.split('/')
         # Join the remaining folders starting from the second element
         destination_folder = os.path.join(*folders[1:])
 
